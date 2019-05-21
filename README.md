@@ -8,6 +8,11 @@
 > 
 > 开发模式下：相较于更小体积的代码，提供的是打包速度上的优化
 
+提供了webpack的默认配置：
+> - entry 的默认值是 ./src
+> - output.path 的默认值是 ./dist
+> - mode 的默认值是 production
+
 停用了一些插件(plugins)：
 > - `NoEmitOnErrorsPlugin` -> `optimization.noEmitOnErrors` (on by default in production mode)
 > - `ModuleConcatenationPlugin` -> `optimization.concatenateModules` (on by default in production mode)
@@ -20,3 +25,13 @@
 
 
 参考文档：[webpack release v4.0.0](https://github.com/webpack/webpack/releases/tag/v4.0.0)
+
+## 初始化
+执行下列指令来初始化和安装依赖。
+```
+npm init -y
+npm i webpack --save-dev
+npm i webpack-cli --save-dev
+```
+
+## 功能支持
