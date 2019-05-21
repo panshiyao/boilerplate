@@ -1,2 +1,2 @@
 # react-boilerplate
-Webpack4.0 + Babel7 + React + TypeScript + Egg 工程化解决方案
+从零搭建Webpack4.0 + Babel7 + React + TypeScript + Egg基础架构🌞。
