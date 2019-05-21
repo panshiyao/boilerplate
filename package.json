@@ -1,0 +1,20 @@
+{
+  "name": "react-boilerplate",
+  "version": "1.0.0",
+  "description": "从零搭建Webpack4.0 + Babel7 + React + TypeScript + Egg基础架构",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/panshiyao/react-boilerplate.git"
+  },
+  "author": "云棋",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/panshiyao/react-boilerplate/issues"
+  },
+  "homepage": "https://github.com/panshiyao/react-boilerplate#readme"
+}
