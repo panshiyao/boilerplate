@@ -18,6 +18,11 @@
   },
   "homepage": "https://github.com/panshiyao/react-boilerplate#readme",
   "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.3.3",
+    "babel-loader": "^8.0.6",
     "ts-loader": "^6.0.1",
     "typescript": "^3.4.5",
     "webpack": "^4.32.0",

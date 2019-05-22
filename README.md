@@ -26,6 +26,16 @@
 
 参考文档：[webpack release v4.0.0](https://github.com/webpack/webpack/releases/tag/v4.0.0)
 
+## Babel7.0的一些重要更新
+最最重要的就是，babel7.0支持了对typescript的编译。很多时候我们使用 ts 之后还是没有办法去掉 babel 的依赖，因为我们可能依赖着 babel 生态里的很多插件，比方说做 antd 按需加载的 babel-plugin-import, 而这些插件无法脱离 babel 发挥作用。在babel7.0以前，如果我们要在项目中集结typescript的话，通常要先使用`ts-loader`把typescript编译成ES6，保留jsx，再使用`babel-loader`把ES6和jsx编译成ES5。
+
+同时使用两个编译器实在是有点矛盾。而Babel7.0支持使用新的`@babel/preset-typescript`来处理ts代码，所以我们在这个项目中会尝试去掉`ts-loader`，使用`@babel/preset-typescript`来进行babel的配置。
+
+
+参考文档：
+- [TypeScript 和 Babel：一场美丽的婚姻](https://juejin.im/post/5c822e426fb9a04a0a5ffb49#heading-17)
+- [Babel 7 Release](https://babeljs.io/blog/2018/08/27/7.0.0#typescript-support-babel-preset-typescript)
+- [让babel帮你编译typescript](https://github.com/frontend9/fe9-library/issues/23)
 ## 初始化
 执行下列指令来初始化和安装依赖。
 ```
@@ -35,3 +45,4 @@ npm i webpack-cli --save-dev
 ```
 
 ## 功能支持
+- 使用babel编译typescript
